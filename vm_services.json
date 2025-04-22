@@ -1,0 +1,28 @@
+[
+  {
+    "label": "vm1-ssh",
+    "resource_id": "ocid1.instance.oc1.ap-melbourne-1.anwwkljrwiclygacwfhiz3uyomzz5vw7vfbznekgpcnhvjpstoxwmdvfnyiq",
+    "private_ip": "10.180.2.158",
+    "services": [
+      {"name": "ssh", "remote_port": 22},
+      {"name": "vnc", "remote_port": 5901}
+    ]
+  },
+  {
+    "label": "vm1-mysql",
+    "private_ip": "10.180.2.192",
+    "services": [
+      {"name": "mysql", "remote_port": 3306}
+    ]
+  },
+  {
+    "label": "vm2",
+    "resource_id": "ocid1.instance.oc1.ap-melbourne-1.anwwkljrwiclygacwlj2sst5wlulti3i64qysqnzuyp2brjfyszd5eaac54q",
+    "private_ip": "10.180.2.27",
+    "services": [
+      {"name": "ssh", "remote_port": 22},
+      {"name": "vnc", "remote_port": 5901}
+    ]
+  }
+]
+
