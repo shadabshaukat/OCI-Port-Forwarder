@@ -1,6 +1,6 @@
 # OCI-Port-Forwarder for Linux and MacOS
 
-### [1] Clone the this repo using Git ###
+### [1] Clone this repo using Git ###
 ```
 git clone https://github.com/shadabshaukat/OCI-Port-Forwarder.git
 cd OCI-Port-Forwarder/
