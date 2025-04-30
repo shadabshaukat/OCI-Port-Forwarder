@@ -60,5 +60,10 @@ ssh -i /Users/shadab/Downloads/mydemo_vcn.priv -N -L 2224:10.180.2.196:443 -p 22
 
 ### [5] Copy the commands and launch the SSH tunnels in seperate terminal windows
 
+Tunnel 1
 <img width="1126" alt="Screenshot 2025-04-30 at 16 16 12" src="https://github.com/user-attachments/assets/42078a97-2765-487a-9c8a-0a9c76345f23" />
+
+Tunnel 2
+<img width="1126" alt="Screenshot 2025-04-30 at 16 17 11" src="https://github.com/user-attachments/assets/5eba9660-8980-4ddf-98a6-9c7645d745de" />
+
 
