@@ -1,10 +1,13 @@
 # OCI-Port-Forwarder for Linux and MacOS
 
 ### Supress Label Warnings ####
+```
 export SUPPRESS_LABEL_WARNING=True
+```
 
 Edit vm_services.json and ad your private IP, port and instance details
 
+```
 shadab@shadab-mac OCI-Port-Forwarder % ./multiple_port_forward.sh
 
 Agent pid 11620
@@ -42,3 +45,4 @@ ssh -i /Users/shadab/Downloads/mydemo_vcn.priv -N -L 2224:10.180.2.196:443 -p 22
 ################################################################
 
 🎉 All sessions active. Copy & paste your tunnel commands above into new terminal tabs!
+```
