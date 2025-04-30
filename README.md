@@ -1,6 +1,6 @@
 # OCI-Port-Forwarder for Linux and MacOS
 
-### [1] Clone this repo using Git ###
+### [1] Clone the repo using Git ###
 ```
 git clone https://github.com/shadabshaukat/OCI-Port-Forwarder.git
 cd OCI-Port-Forwarder/
@@ -59,3 +59,6 @@ ssh -i /Users/shadab/Downloads/mydemo_vcn.priv -N -L 2224:10.180.2.196:443 -p 22
 ```
 
 ### [5] Copy the commands and launch the SSH tunnels in seperate terminal windows
+
+<img width="1126" alt="Screenshot 2025-04-30 at 16 16 12" src="https://github.com/user-attachments/assets/42078a97-2765-487a-9c8a-0a9c76345f23" />
+
