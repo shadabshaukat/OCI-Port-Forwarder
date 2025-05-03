@@ -1,5 +1,12 @@
 # OCI-Port-Forwarder for Linux and MacOS
 
+## Pre-Requisites ##
+[a] Install OCI CLI on Linux or MacOS. Steps to install  OCI CLI : https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm
+
+[b] Create API Key, configure OCI CLI and add your private key
+    https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliconfigure.htm
+
+## Install ##
 ### [1] Clone the repo using Git ###
 ```
 git clone https://github.com/shadabshaukat/OCI-Port-Forwarder.git
@@ -13,6 +20,8 @@ cd OCI-Port-Forwarder/
 vim multiple_port_forward.sh
 ```
 
+Change as per your OCI details
+
 ```
 CONFIG_FILE="vm_services.json"
 BASTION_ID="ocid1.bastion.oc1.ap-melbourne-1.axxxxxxxxxxxxxx"
@@ -21,6 +30,13 @@ PRIVATE_KEY_FILE="/Users/shadab/Downloads/xxxxx.priv"
 PROFILE="apxxxxxxx"
 STARTING_LOCAL_PORT=2222
 ```
+
+- *CONFIG_FILE* --> Local file which has the information of your private ip's and port
+- *BASTION_ID* --> OCI Bastion OCID
+- *PUBLIC_KEY_FILE* --> Your OCI API public key
+- *PRIVATE_KEY_FILE* --> Your OCI API private key
+- *PROFILE* --> Name of your profile in the ~/.oci/config file
+- *STARTING_LOCAL_PORT* --> Starting local port which will be forwarded to remote port. It auto-increments by 1 for every entry in the vm_services.json file
 
 ### [3] Supress Label Warnings ####
 
@@ -32,6 +48,28 @@ export SUPPRESS_LABEL_WARNING=True
 
 ```
 vim vm_services.json
+```
+
+Example :
+```
+[
+  {
+    "label": "vm1-ssh",
+    "resource_id": "ocid1.instance.oc1.ap-melbourne-1.anwwkljrwiclygacwfhiz3uyomzz5vw7vfbznekgpcnhvjpstoxwmdvfnyiq",
+    "private_ip": "10.180.2.158",
+    "services": [
+      {"name": "ssh", "remote_port": 22},
+      {"name": "vnc", "remote_port": 5901}
+    ]
+  },
+  {
+    "label": "ogg",
+    "private_ip": "10.180.2.196",
+    "services": [
+      {"name": "ogg", "remote_port": 443}
+    ]
+  }
+]
 ```
 
 ### [5] Run the Shell Script to Generate Bastion Host Port forwarding sessions
