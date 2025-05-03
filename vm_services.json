@@ -4,25 +4,84 @@
     "resource_id": "ocid1.instance.oc1.ap-melbourne-1.anwwkljrwiclygacwfhiz3uyomzz5vw7vfbznekgpcnhvjpstoxwmdvfnyiq",
     "private_ip": "10.180.2.158",
     "services": [
-      {"name": "ssh", "remote_port": 22},
-      {"name": "vnc", "remote_port": 5901}
+      {
+        "name": "ssh",
+        "remote_port": 22
+      },
+      {
+        "name": "vnc",
+        "remote_port": 5901
+      }
     ]
   },
   {
-    "label": "vm1-mysql",
-    "private_ip": "10.180.2.192",
+    "label": "ogg",
+    "private_ip": "10.180.2.196",
     "services": [
-      {"name": "mysql", "remote_port": 3306}
+      {
+        "name": "ogg-orcl",
+        "remote_port": 443
+      }
     ]
   },
   {
-    "label": "vm2",
-    "resource_id": "ocid1.instance.oc1.ap-melbourne-1.anwwkljrwiclygacwlj2sst5wlulti3i64qysqnzuyp2brjfyszd5eaac54q",
-    "private_ip": "10.180.2.27",
+    "label": "ogg",
+    "private_ip": "10.180.2.254",
     "services": [
-      {"name": "ssh", "remote_port": 22},
-      {"name": "vnc", "remote_port": 5901}
+      {
+        "name": "ogg-sqlserver",
+        "remote_port": 443
+      }
+    ]
+  },
+  {
+    "label": "ogg",
+    "private_ip": "10.180.2.139",
+    "services": [
+      {
+        "name": "ogg-postgresql",
+        "remote_port": 443
+      }
+    ]
+  },
+  {
+    "label": "ogg",
+    "private_ip": "10.180.2.174",
+    "services": [
+      {
+        "name": "ogg-bigdata",
+        "remote_port": 443
+      }
+    ]
+  },
+  {
+    "label": "ogg",
+    "private_ip": "10.180.2.7",
+    "services": [
+      {
+        "name": "ogg-mysql",
+        "remote_port": 443
+      }
+    ]
+  },
+  {
+    "label": "ogg",
+    "private_ip": "10.180.2.115",
+    "services": [
+      {
+        "name": "ogg-stream-analytics",
+        "remote_port": 443
+      }
+    ]
+  },
+  {
+    "label": "ADB",
+    "private_ip": "10.180.2.238",
+    "services": [
+      {
+        "name": "adb-spotlight",
+        "remote_port": 443
+      }
     ]
   }
 ]
-
