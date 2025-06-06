@@ -1,10 +1,10 @@
 #!/bin/bash
 
 CONFIG_FILE="vm_services.json"
-BASTION_ID="ocid1.bastion.oc1.ap-melbourne-1.axxxxxxxxxxxxxx"
-PUBLIC_KEY_FILE="/Users/shadab/Downloads/xxxxx.pub"
-PRIVATE_KEY_FILE="/Users/shadab/Downloads/xxxxx.priv"
-PROFILE="apxxxxxxx"
+BASTION_ID="ocid1.bastion.oc1.ap-melbourne-1.a*****a"
+PUBLIC_KEY_FILE="/Users/shadab/Downloads/OracleContent/Keys/shadablenovo.pub"
+PRIVATE_KEY_FILE="/Users/shadab/Downloads/OracleContent/mydemo_vcn.priv"
+PROFILE="*****"
 STARTING_LOCAL_PORT=2222
 
 oci setup repair-file-permissions --file $PRIVATE_KEY_FILE
