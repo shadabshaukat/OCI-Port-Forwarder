@@ -1,15 +1,21 @@
 [
   {
-    "label": "vm1-ssh",
+    "label": "vm1-rdp",
     "resource_id": "ocid1.instance.oc1.ap-sydney-1.anzxsljr5hwie4iclnguqgr4fplmwqa5gxpov2zsrwe5jncuohkismxvi6aq",
     "private_ip": "10.117.0.45",
     "services": [
       {
         "name": "rdp",
         "remote_port": 3389
-      },
+      }
+    ]
+  },
+{
+    "label": "mysql",
+    "private_ip": "10.117.0.229",
+    "services": [
       {
-        "name": "mysql",
+        "name": "hw-mysql",
         "remote_port": 3306
       }
     ]
