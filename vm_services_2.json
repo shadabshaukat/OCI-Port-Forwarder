@@ -1,16 +1,16 @@
 [
   {
     "label": "vm1-ssh",
-    "resource_id": "ocid1.instance.oc1.ap-melbourne-1.anwwkljrwiclygacwfhiz3uyomzz5vw7vfbznekgpcnhvjpstoxwmdvfnyiq",
-    "private_ip": "10.180.2.158",
+    "resource_id": "ocid1.instance.oc1.ap-sydney-1.anzxsljr5hwie4iclnguqgr4fplmwqa5gxpov2zsrwe5jncuohkismxvi6aq",
+    "private_ip": "10.117.0.45",
     "services": [
       {
-        "name": "ssh",
-        "remote_port": 22
+        "name": "rdp",
+        "remote_port": 3389
       },
       {
-        "name": "vnc",
-        "remote_port": 5901
+        "name": "mysql",
+        "remote_port": 3306
       }
     ]
   }
