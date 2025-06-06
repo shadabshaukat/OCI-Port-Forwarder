@@ -1,0 +1,16 @@
+
+  {
+    "label": "vm1-ssh",
+    "resource_id": "ocid1.instance.oc1.ap-melbourne-1.anwwkljrwiclygacwfhiz3uyomzz5vw7vfbznekgpcnhvjpstoxwmdvfnyiq",
+    "private_ip": "10.180.2.158",
+    "services": [
+      {
+        "name": "ssh",
+        "remote_port": 22
+      },
+      {
+        "name": "vnc",
+        "remote_port": 5901
+      }
+    ]
+  }
