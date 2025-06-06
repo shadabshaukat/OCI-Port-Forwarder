@@ -1,4 +1,4 @@
-
+[
   {
     "label": "vm1-ssh",
     "resource_id": "ocid1.instance.oc1.ap-melbourne-1.anwwkljrwiclygacwfhiz3uyomzz5vw7vfbznekgpcnhvjpstoxwmdvfnyiq",
@@ -14,3 +14,4 @@
       }
     ]
   }
+]
