@@ -1,7 +1,6 @@
 [
   {
     "label": "vm1-rdp",
-    "resource_id": "ocid1.instance.oc1.ap-sydney-1.anzxsljr5hwie4iclnguqgr4fplmwqa5gxpov2zsrwe5jncuohkismxvi6aq",
     "private_ip": "10.117.0.45",
     "services": [
       {
@@ -17,6 +16,10 @@
       {
         "name": "hw-mysql",
         "remote_port": 3306
+      },
+     {
+        "name": "https",
+        "remote_port": 443
       }
     ]
   }
